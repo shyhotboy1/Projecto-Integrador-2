@@ -62,18 +62,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
 </head>
 
 
+
 <body>
-    <form action="#" method="POST">
-        Username: <br/><input type="text" name="username"><br/>
-        Password: <br/><input type="text" name="password"><br/>
-        <input type="submit" value="Iniciar sesión">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="/style/images/logo-principal.png" id="icon" alt="User Icon" />
+    </div>
+
+     <form action="#" method="POST">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
     </div>
     </form>
     <div id="menu">
