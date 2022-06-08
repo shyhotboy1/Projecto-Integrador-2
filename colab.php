@@ -22,4 +22,10 @@
 </head>
 <body>
     <h1>Colaborador</h1>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li class="cerrar-sesion"><a href="logout.php">Cerrar sesión</a></li>
+        </ul>
+    </div>
 </body>
