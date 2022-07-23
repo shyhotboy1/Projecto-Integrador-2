@@ -2,21 +2,23 @@
 include_once 'database.php';
 
 
-if(isset($_POST['id']) && isset($_POST['username']) && isset($_POST['password'])){
+if(isset($_POST['id']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['rol_id'])){
         $id = $_POST['id'];
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $rol_id = $_POST['rol_id'];
 
         $db = new Database();
         $query = $db->connect()->prepare(
           "INSERT INTO usuarios 
-            VALUES( ':id', ':username', ':password')"
+            VALUES( ':id', ':username', ':password', ':rol_id')"
         );
         
         $query->execute([
           'id' => $id,
           'username' => $username, 
-          'password' => $password
+          'password' => $password,
+          'rol_id' => $rol_id
         ]);
 
         $row = $query->fetch(PDO::FETCH_NUM);

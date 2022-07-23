@@ -74,7 +74,20 @@
 
 <body>
 
-
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <video class="img-fluid" autoplay loop muted>
+        <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Manejador de OMSA</h5>
+        <p>
+          Solo usar por administradores!
+        </p>
+      </div>
+    </div>
 
 
   <!-- Notificaciones Push -->
@@ -100,31 +113,40 @@
 
 
 
-    <!-- Background image -->
-    <div class="bg-image" style=" background-image: url('http://127.0.0.1/style/images/bg.jpg'); background-size: cover; background-repeat: no-repeat; margin: 0; height: 100vh;">
-      <!-- Background image -->
-      <section id="contact">
-          <div class="container" id="container-contact">
 
-              <div class="abs-center">
+    <section id="contact">
 
-                  <div class=" text-center" id="tit-contacto">
-                      <h2 class="section-heading">PANEL DE CONTROL</h2>
-                      <div class="text-center">
-                        <img src="/style/images/logo-principal.png" class="img-fluid" alt="Responsive image" />
-                      </div>
-                      <!-- Form -->
-                             <div class="form-group">
-                                <div class="text-center">
-                                  <form action="#" method="POST">
-                                    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Login">
-                                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
-                                      <button type="submit" class="btn btn-primary" >Log in</button> <button class="btn btn-dark" href="signup.php">Sign in</button>
-                                </form>
-                            </div>
+        <video src="video/Walking-Away.mp4" autoplay="" loop=""></video>
+
+        <div class="container" id="container-contact">
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-6 text-center" id="tit-contacto">
+                    <h2 class="section-heading">Panel de Control</h2>
+                    <div class="text-center">
+                      <img src="/style/images/logo-principal.png" class="img-fluid" alt="Responsive image" />
+                    </div>
+                    <!-- Form -->
+                           <div class="form-group">
+                              <div class="text-center">
+                                <form action="#" method="POST">
+                                  <input type="text" id="login" class="fadeIn second" name="username" placeholder="Login">
+                                  <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
+                                    <button type="submit" class="btn btn-primary" >Log in</button>
+                              </form>
+                               <!-- Sign In -->
+                            <button href="Sign-in.php" class="btn btn-dark">Sign in</button>
                           </div>
+                        </div>
 
-  </div>
+
+
+
+
+
+
+
 
 
       <!-- bootstrap instances -->
